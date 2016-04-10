@@ -11,4 +11,16 @@
 	<insert id="addUser" parameterType="com.mybatis.pojo.User">
 		insert into user(name,age) values(#{name},#{age})
 	</insert>
+
+	<delete id="deleteUser" parameterType="String">
+		delete from user where name=#{name}
+	</delete>
+	 
+	<update id="updateUser" parameterType="com.mybatis.pojo.User">
+		update user set name=#{name},age=#{age} where id=#{id}
+	</update>
+	
+	<select id="getAllUser" resultType="com.mybatis.pojo.User">
+		select * from user
+	</select>
 </mapper>
