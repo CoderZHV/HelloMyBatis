@@ -6,13 +6,13 @@ import com.mybatis.domain.User;
 
 public interface UserMapper {
 	
-	void selectByName(String name);
+	User selectByName(String name);
 	
-	int insert(User user);
-	
-	int deleteByName(String name);
-	
-	int updateByName(String name);
-	
-	List<User> getAllUser();
+//	int insert(User user);
+//	
+//	int deleteByName(String name);
+//	
+//	int updateByName(String name);
+//	
+//	List<User> getAllUser();
 }
