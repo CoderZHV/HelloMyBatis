@@ -21,7 +21,8 @@ public class MainTest {
 		ApplicationContext con = new ClassPathXmlApplicationContext("beans.xml");
 		UserMap um = (UserMap) con.getBean("userMap");
 		User user = new User("zv", 17);
-		um.save(user);
+		//um.save(user);
+		System.out.println(um.getAllUser());
 	}
 	
 }
